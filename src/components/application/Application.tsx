@@ -42,5 +42,5 @@ export const Application: React.FC = () => {
         <button disabled>Submit</button>
       </form>
     </>
-  );
-};
+  )
+}

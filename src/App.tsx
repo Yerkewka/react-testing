@@ -1,5 +1,5 @@
-import { MuiMode } from './components/mui/MuiMode';
-import { AppProviders } from './providers/AppProviders';
+import { MuiMode } from './components/mui/MuiMode'
+import { AppProviders } from './providers/AppProviders'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <MuiMode />
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App

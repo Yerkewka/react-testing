@@ -1,7 +1,7 @@
 interface IProps {
-  name?: string;
+  name?: string
 }
 
 export const Greet: React.FC<IProps> = ({ name }) => {
-  return <div>Hello {name ? name : 'Guest'}</div>;
-};
+  return <div>Hello {name ? name : 'Guest'}</div>
+}

@@ -1,7 +1,7 @@
 interface IProps {
-  count: number;
-  handleIncrement?: () => void;
-  handleDecrement?: () => void;
+  count: number
+  handleIncrement?: () => void
+  handleDecrement?: () => void
 }
 
 export const CounterTwo: React.FC<IProps> = ({
@@ -16,5 +16,5 @@ export const CounterTwo: React.FC<IProps> = ({
       {handleIncrement && <button onClick={handleIncrement}>Increment</button>}
       {handleDecrement && <button onClick={handleDecrement}>Decrement</button>}
     </div>
-  );
-};
+  )
+}

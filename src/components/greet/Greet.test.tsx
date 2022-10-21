@@ -3,24 +3,24 @@
  * It should render hello followed by the name
  */
 
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react'
 
-import { Greet } from './Greet';
+import { Greet } from './Greet'
 
 describe('Greet', () => {
   test('renders correctly', () => {
-    render(<Greet />);
+    render(<Greet />)
 
-    const textElement = screen.getByText(/hello/i);
+    const textElement = screen.getByText(/hello/i)
 
-    expect(textElement).toBeInTheDocument();
-  });
+    expect(textElement).toBeInTheDocument()
+  })
 
   test('renders with a name', () => {
-    render(<Greet name="Yerkebulan" />);
+    render(<Greet name="Yerkebulan" />)
 
-    const textElement = screen.getByText(/hello yerkebulan/i);
+    const textElement = screen.getByText(/hello yerkebulan/i)
 
-    expect(textElement).toBeInTheDocument();
-  });
-});
+    expect(textElement).toBeInTheDocument()
+  })
+})

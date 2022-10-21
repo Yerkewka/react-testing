@@ -1,23 +1,23 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
 interface IProps {
-  skills: string[];
+  skills: string[]
 }
 
 export const Skills: React.FC<IProps> = ({ skills }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoggedIn(true);
-    }, 1001);
-  }, []);
+      setIsLoggedIn(true)
+    }, 1001)
+  }, [])
 
   return (
     <>
       <ul>
         {skills.map((skill) => {
-          return <li key={skill}>{skill}</li>;
+          return <li key={skill}>{skill}</li>
         })}
       </ul>
       {isLoggedIn ? (
@@ -26,5 +26,5 @@ export const Skills: React.FC<IProps> = ({ skills }) => {
         <button onClick={() => setIsLoggedIn(true)}>Login</button>
       )}
     </>
-  );
-};
+  )
+}
