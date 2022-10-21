@@ -1,10 +1,13 @@
-import { Application } from './components/application/Application';
+import { MuiMode } from './components/mui/MuiMode';
+import { AppProviders } from './providers/AppProviders';
 
 function App() {
   return (
-    <div className="App">
-      <Application />
-    </div>
+    <AppProviders>
+      <div className="App">
+        <MuiMode />
+      </div>
+    </AppProviders>
   );
 }
 
